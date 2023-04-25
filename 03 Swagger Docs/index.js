@@ -5,7 +5,7 @@ const app = express();
 // * swagger docs related
 const swaggerUi = require('swagger-ui-express');
 const fs = require('fs');
-const YAML = require('yaml');
+const YAML = require('yamljs');
 const fileUpload = require('express-fileupload');
 
 const file = fs.readFileSync('./swagger.yaml', 'utf8');
